@@ -1,9 +1,11 @@
-require "yast/rake"
+# Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
+# All Rights Reserved.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the MIT License.
+#
 
-Yast::Tasks.configuration do |conf|
-  # lets ignore license check for now
-  conf.skip_license_check << /.*/
-end
+require "yast/rake"
 
 # do not create a tarball, this package contains only a .spec file
 Rake::Task["tarball"].clear_actions
