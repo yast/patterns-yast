@@ -65,7 +65,7 @@ Requires:       yast2-perl-bindings
 Requires:       yast2-pkg-bindings
 Requires:       yast2-security
 Requires:       yast2-services-manager
-Requires:       yast2-storage
+Requires:       yast2-storage-ng
 Requires:       yast2-sysconfig
 Requires:       yast2-theme-openSUSE
 Requires:       yast2-transfer
@@ -138,14 +138,6 @@ Suggests:       yast2-theme-openSUSE-Crystal
 Suggests:       yast2-theme-openSUSE-Oxygen
 Suggests:       ivtv
 Suggests:       ivtv-firmware
-# required by yast2-storage
-Suggests:       pam_mount
-%ifarch x86_64
-Suggests:       pam_fp-32bit
-%endif
-%ifarch ppc64
-Suggests:       pam_fp-64bit
-%endif
 # yast2-sound
 Suggests:       alsa-firmware
 Suggests:       alsa-tools
@@ -270,7 +262,6 @@ Recommends:     yast2-installation-devel-doc
 Recommends:     yast2-network-devel-doc
 Recommends:     yast2-nis-server-devel-doc
 Recommends:     yast2-printer-devel-doc
-Recommends:     yast2-storage-devel
 Recommends:     yast2-perl-bindings
 Recommends:     yast2-python-bindings
 Recommends:     yast2-ruby-bindings
