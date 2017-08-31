@@ -78,7 +78,7 @@ Recommends:     yast2-fonts
 Recommends:     yast2-inetd
 Recommends:     yast2-iscsi-client
 Recommends:     yast2-journal
-*Recommends:     yast2-ldap-client
+Recommends:     yast2-ldap-client
 Recommends:     yast2-metapackage-handler
 Recommends:     yast2-nfs-client
 Recommends:     yast2-nis-client
