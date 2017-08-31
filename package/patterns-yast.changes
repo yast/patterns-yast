@@ -1,4 +1,23 @@
 -------------------------------------------------------------------
+Wed Aug 30 02:03:24 UTC 2017 - sflees@suse.de
+
+- Tidy up for SLE 15
+  * yast2-storage-ng -> yast2-storage
+  * Drop the following (removed from Factory)
+    * yast2-kerberos-client
+    * yast2-packager-webpin
+    * yast2-product-creator
+    * yast2-autofs
+    * yast2-mail-plugins
+    * yast2-phone-services
+    * yast2-theme-openSUSE-Crystal
+    * yast2-fingerprint-reader
+    * yast2-tv
+  * Re order some things to alphabetical order
+- Recommend ntp here rather then in patterns-base as a work around
+  for boo#936378
+
+-------------------------------------------------------------------
 Wed Aug 16 11:22:24 CEST 2017 - snwint@suse.de
 
 - replace yast2-storage by yast2-storage-ng (fate#318196)
