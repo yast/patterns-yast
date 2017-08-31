@@ -65,7 +65,7 @@ Requires:       yast2-perl-bindings
 Requires:       yast2-pkg-bindings
 Requires:       yast2-security
 Requires:       yast2-services-manager
-Requires:       yast2-storage-ng
+Requires:       yast2-storage
 Requires:       yast2-sysconfig
 Requires:       yast2-theme-openSUSE
 Requires:       yast2-transfer
@@ -73,10 +73,12 @@ Requires:       yast2-tune
 Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-xml
+Recommends:     yast2-auth-client
+Recommends:     yast2-fonts
 Recommends:     yast2-inetd
 Recommends:     yast2-iscsi-client
-Recommends:     yast2-kerberos-client
-Recommends:     yast2-ldap-client
+Recommends:     yast2-journal
+*Recommends:     yast2-ldap-client
 Recommends:     yast2-metapackage-handler
 Recommends:     yast2-nfs-client
 Recommends:     yast2-nis-client
@@ -90,27 +92,23 @@ Recommends:     yast2-samba-server
 # #388892
 Recommends:     yast2-vm
 # #542936
-Recommends:     yast2-packager-webpin
-Recommends:     yast2-auth-client
-Recommends:     yast2-fonts
-Recommends:     yast2-journal
 Recommends:     yast2-vpn
+# Recommend NTP at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
+Recommends:     ntp
 Suggests:       yast2-online-update-configuration
-Suggests:       yast2-product-creator
 Suggests:       autoyast2
 Suggests:       autoyast2-installation
 Suggests:       inst-source-utils
 Suggests:       libyui-qt-pkg
 Suggests:       libyui-gtk-pkg
-Suggests:       yast2-autofs
 Suggests:       yast2-drbd
 Suggests:       yast2-firstboot
-Suggests:       yast2-mail-plugins
 Suggests:       yast2-multipath
-Suggests:       yast2-phone-services
 Suggests:       yast2-snapper
 # #381365
 Suggests:       yast2-squid
+# themeing for hardcore KDE lovers
+Suggests:       yast2-theme-openSUSE-Oxygen
 # see extra-packages for reasons
 Suggests:       star
 Suggests:       sbl
@@ -133,9 +131,6 @@ Suggests:       sane-backends
 Suggests:       hplip
 # optionally, open source, derived from iscan
 Suggests:       iscan-free
-# themeing for hardcore KDE lovers
-Suggests:       yast2-theme-openSUSE-Crystal
-Suggests:       yast2-theme-openSUSE-Oxygen
 Suggests:       ivtv
 Suggests:       ivtv-firmware
 # yast2-sound
@@ -147,7 +142,6 @@ Suggests:       ncpfs
 %ifarch ppc
 Suggests:       kernel-kdump
 %endif
-Suggests:       yast2-fingerprint-reader
 Suggests:       sssd
 Suggests:       snapper
 # FATE 304350
@@ -182,7 +176,6 @@ Requires:       yast2-bootloader
 Requires:       yast2-ntp-client
 Suggests:       autoyast2-installation
 Suggests:       yast2-firewall
-Suggests:       yast2-kerberos-client
 Suggests:       yast2-ldap
 Suggests:       yast2-ldap-client
 Suggests:       yast2-nfs-client
@@ -190,7 +183,6 @@ Suggests:       yast2-nis-client
 Suggests:       yast2-printer
 Suggests:       yast2-samba-client
 Suggests:       yast2-slp
-Suggests:       yast2-tv
 Suggests:       yast2-update
 Suggests:       autoyast2
 %ifarch x86_64
@@ -232,7 +224,6 @@ Recommends:     libyui-qt-pkg
 Recommends:     yast2-control-center-qt
 # yast modules for the desktop
 Recommends:     yast2-scanner
-Recommends:     yast2-tv
 
 %description x11_yast
 Graphical YaST user interfaces for minimal X desktop.
