@@ -65,7 +65,7 @@ Requires:       yast2-perl-bindings
 Requires:       yast2-pkg-bindings
 Requires:       yast2-security
 Requires:       yast2-services-manager
-Requires:       yast2-storage
+Requires:       yast2-storage-ng
 Requires:       yast2-sysconfig
 Requires:       yast2-theme-openSUSE
 Requires:       yast2-transfer
@@ -98,7 +98,6 @@ Recommends:     ntp
 Suggests:       yast2-online-update-configuration
 Suggests:       autoyast2
 Suggests:       autoyast2-installation
-Suggests:       inst-source-utils
 Suggests:       libyui-qt-pkg
 Suggests:       libyui-gtk-pkg
 Suggests:       yast2-drbd
@@ -110,19 +109,12 @@ Suggests:       yast2-squid
 # themeing for hardcore KDE lovers
 Suggests:       yast2-theme-openSUSE-Oxygen
 # see extra-packages for reasons
-Suggests:       star
 Suggests:       sbl
 Suggests:       Mesa
 Suggests:       i4l-isdnlog
 Suggests:       ypserv
 Suggests:       ntp
 Suggests:       ntp-doc
-Suggests:       star
-Suggests:       alevt
-Suggests:       kradio
-Suggests:       motv
-Suggests:       nxtvepg
-Suggests:       v4l-tools
 Suggests:       install-initrd
 # for yast2-scanner
 # mandatory
@@ -131,8 +123,6 @@ Suggests:       sane-backends
 Suggests:       hplip
 # optionally, open source, derived from iscan
 Suggests:       iscan-free
-Suggests:       ivtv
-Suggests:       ivtv-firmware
 # yast2-sound
 Suggests:       alsa-firmware
 Suggests:       alsa-tools
@@ -262,8 +252,6 @@ Recommends:     yast2-libyui-devel
 Recommends:     yast2-ycp-ui-bindings-devel
 Recommends:     libyui-qt-devel
 Recommends:     libyui-ncurses-devel
-Suggests:       inst-source-utils
-Suggests:       createrepo
 
 %description devel_yast
 Tools and libraries for developing YaST modules, the setup and configuration tool for openSUSE.
