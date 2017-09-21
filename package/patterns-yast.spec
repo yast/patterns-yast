@@ -240,11 +240,11 @@ Recommends:     rubygem(%{rb_default_ruby_abi}:yast-rake)
 Recommends:     rubygem(%{rb_default_ruby_abi}:byebug)
 Recommends:     rubygem(%{rb_default_ruby_abi}:rspec)
 Recommends:     rubygem(%{rb_default_ruby_abi}:simplecov)
+Recommends:     rubygem(%{rb_default_ruby_abi}:yard)
 # only in OBS YaST:Head, but install it when available
 # YaST currently requires version 0.41.2
 Recommends:     rubygem(%{rb_default_ruby_abi}:rubocop) = 0.41.2
 Suggests:       yast2-ycp-ui-bindings-devel
-Suggests:       yast2-pkg-bindings-devel-doc
 # Bug 304645 gives the list below:
 Recommends:     yast2-core-devel
 Recommends:     yast2-perl-bindings
