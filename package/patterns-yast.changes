@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Sep 21 07:28:30 UTC 2017 - lslezak@suse.cz
+
+- Update the YaST development pattern to install the Ruby gems
+  used in development, removed dropped *-devel-doc packages
+  (bsc#1020033)
+
+-------------------------------------------------------------------
 Wed Aug 30 02:03:24 UTC 2017 - sflees@suse.de
 
 - Tidy up for SLE 15

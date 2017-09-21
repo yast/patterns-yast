@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20170816
+Version:        20170921
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -235,21 +235,23 @@ Provides:       pattern-visible()
 
 Recommends:     yast2-devtools
 Recommends:     yast2-testsuite
+Recommends:     osc
+Recommends:     rubygem(%{rb_default_ruby_abi}:yast-rake)
+Recommends:     rubygem(%{rb_default_ruby_abi}:byebug)
+Recommends:     rubygem(%{rb_default_ruby_abi}:rspec)
+Recommends:     rubygem(%{rb_default_ruby_abi}:simplecov)
+# only in OBS YaST:Head, but install it when available
+# YaST currently requires version 0.41.2
+Recommends:     rubygem(%{rb_default_ruby_abi}:rubocop) = 0.41.2
+Suggests:       yast2-ycp-ui-bindings-devel
+Suggests:       yast2-pkg-bindings-devel-doc
 # Bug 304645 gives the list below:
-Recommends:     yast2-pkg-bindings-devel-doc
 Recommends:     yast2-core-devel
-Recommends:     yast2-devel-doc
-Recommends:     yast2-installation-devel-doc
-Recommends:     yast2-network-devel-doc
-Recommends:     yast2-nis-server-devel-doc
-Recommends:     yast2-printer-devel-doc
 Recommends:     yast2-perl-bindings
-Recommends:     yast2-python-bindings
 Recommends:     yast2-ruby-bindings
 Recommends:     git
 Recommends:     libzypp-devel
 Recommends:     yast2-libyui-devel
-Recommends:     yast2-ycp-ui-bindings-devel
 Recommends:     libyui-qt-devel
 Recommends:     libyui-ncurses-devel
 
