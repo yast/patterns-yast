@@ -140,6 +140,7 @@ Suggests:       cim-schema
 Requires:       yast2-branding-openSUSE
 %else
 Requires:       yast2-theme
+%endif
 
 %description yast2_basis
 YaST tools for basic system administration.
