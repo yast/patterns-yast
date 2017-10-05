@@ -1,5 +1,5 @@
 #
-# spec file for package patterns-openSUSE
+# spec file for package patterns-yast
 #
 # Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
 #
