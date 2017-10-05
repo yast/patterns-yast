@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Oct  5 00:23:51 UTC 2017 - sflees@suse.de
+
+- Do branding seperately for SLE vs openSUSE
+- Require current yast2-branding-openSUSE rather then 
+  yast2-theme-openSUSE
+- 20171005
+
+-------------------------------------------------------------------
 Thu Sep 21 07:28:30 UTC 2017 - lslezak@suse.cz
 
 - Update the YaST development pattern to install the Ruby gems
