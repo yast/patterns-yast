@@ -139,7 +139,7 @@ Suggests:       cim-schema
 %if 0%{?is_opensuse}
 Requires:       yast2-branding-openSUSE
 %else
-Requires:       yast2-theme
+Requires:       yast2_theme
 %endif
 
 %description yast2_basis
