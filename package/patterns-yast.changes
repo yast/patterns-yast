@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Oct  9 12:05:56 UTC 2017 - sflees@suse.de
+
+- yast2_theme not yast2-theme
+
+-------------------------------------------------------------------
 Thu Oct  5 00:23:51 UTC 2017 - sflees@suse.de
 
 - Do branding seperately for SLE vs openSUSE
