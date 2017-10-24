@@ -13,7 +13,7 @@ Getting the Sources
 
 To get the source code, clone the GitHub repository:
 
-    git clone https://github.com/yast/patters-yast.git
+    git clone https://github.com/yast/patterns-yast.git
 
 If you want to contribute into the project you can
 [fork](https://help.github.com/articles/fork-a-repo/) the repository and clone your fork.
