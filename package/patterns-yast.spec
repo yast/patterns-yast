@@ -136,6 +136,9 @@ Suggests:       snapper
 # FATE 304350
 Suggests:       sblim-sfcb
 Suggests:       cim-schema
+%ifarch s390x
+Requires:       yast2-cio
+%endif
 %if 0%{?is_opensuse}
 Requires:       yast2-branding-openSUSE
 %else

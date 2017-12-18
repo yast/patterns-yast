@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Dec 18 04:20:05 UTC 2017 - simonf.lees@suse.com
+
+- Package yast2-cio not installed by default on s390x (bsc#1073074)
+
+-------------------------------------------------------------------
 Mon Oct  9 12:05:56 UTC 2017 - sflees@suse.de
 
 - yast2_theme not yast2-theme
