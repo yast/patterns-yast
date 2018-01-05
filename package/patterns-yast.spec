@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20171005
+Version:        20180105
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -63,6 +63,10 @@ Requires:       yast2-packager
 Requires:       yast2-pam
 Requires:       yast2-perl-bindings
 Requires:       yast2-pkg-bindings
+%if !0%{?is_opensuse}
+# SLE only
+Requires:       yast2-registration
+%endif
 Requires:       yast2-security
 Requires:       yast2-services-manager
 Requires:       yast2-storage-ng
