@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180105
+Version:        20180209
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -78,7 +78,6 @@ Requires:       yast2-users
 Requires:       yast2-xml
 Recommends:     yast2-auth-client
 Recommends:     yast2-fonts
-Recommends:     yast2-inetd
 Recommends:     yast2-iscsi-client
 Recommends:     yast2-journal
 Recommends:     yast2-ldap-client

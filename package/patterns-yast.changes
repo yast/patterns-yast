@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Feb  9 07:44:15 UTC 2018 - jreidinger@suse.com
+
+- Remove dropped yast2-inetd (fate#323373)
+- 20180209
+
+-------------------------------------------------------------------
 Fri Jan  5 09:41:04 UTC 2018 - lslezak@suse.cz
 
 - Added yast2-registration to the "yast2_basis" pattern (SLE only)
