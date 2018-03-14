@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Mar 14 16:55:22 UTC 2018 - aginies@suse.com
+
+- remove yast2-vm from Recommends as it will be only install if this
+  this is a sles-release (BSC#1083398)
+- version 20180314
+
+-------------------------------------------------------------------
 Fri Feb  9 07:44:15 UTC 2018 - jreidinger@suse.com
 
 - Remove dropped yast2-inetd (fate#323373)
