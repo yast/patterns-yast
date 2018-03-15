@@ -91,8 +91,6 @@ Recommends:     yast2-sudo
 # see the discussion in #386473
 Recommends:     yast2-samba-client
 Recommends:     yast2-samba-server
-# #388892
-Recommends:     yast2-vm
 # #542936
 Recommends:     yast2-vpn
 # Recommend NTP at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
