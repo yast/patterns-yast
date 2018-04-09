@@ -1,7 +1,7 @@
 #
 # spec file for package patterns-yast
 #
-# Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
+# Copyright (c) 2018 SUSE LINUX GmbH, Nuernberg, Germany.
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180314
+Version:        20180409
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -77,6 +77,7 @@ Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-xml
 Recommends:     yast2-auth-client
+Recommends:     yast2-auth-server
 Recommends:     yast2-fonts
 Recommends:     yast2-iscsi-client
 Recommends:     yast2-journal
@@ -88,6 +89,7 @@ Recommends:     yast2-ntp-client
 Recommends:     yast2-printer
 Recommends:     yast2-slp
 Recommends:     yast2-sudo
+Recommends:     yast2-support
 # see the discussion in #386473
 Recommends:     yast2-samba-client
 Recommends:     yast2-samba-server
@@ -97,7 +99,8 @@ Recommends:     yast2-vpn
 Recommends:     ntp
 Suggests:       yast2-online-update-configuration
 Suggests:       autoyast2
-Suggests:       autoyast2-installation
+# yast2 clone_system is expected to be installed by default (sle-beta)
+Recommends:     autoyast2-installation
 Suggests:       libyui-qt-pkg
 Suggests:       libyui-gtk-pkg
 Suggests:       yast2-drbd
@@ -128,10 +131,7 @@ Suggests:       alsa-firmware
 Suggests:       alsa-tools
 # yast2-printer - printing via novell ipx
 Suggests:       ncpfs
-# yast2-kdump
-%ifarch ppc
 Suggests:       kernel-kdump
-%endif
 Suggests:       sssd
 Suggests:       snapper
 # FATE 304350
@@ -159,7 +159,6 @@ Group:          Metapackages
 Provides:       pattern() = yast2_install_wf
 Provides:       pattern-icon() = yast
 Provides:       pattern-order() = 1240
-Provides:       pattern-visible()
 
 Requires:       libyui-ncurses-pkg
 Requires:       yast2-installation
@@ -211,9 +210,11 @@ Provides:       pattern() = x11_yast
 Provides:       pattern-extends() = yast2_basis
 Provides:       pattern-icon() = pattern-generic
 Provides:       pattern-order() = 1320
+%if 0%{?is_opensuse}
 Supplements:    packageand(patterns-openSUSE-x11:patterns-openSUSE-yast2_basis)
 Conflicts:      pattern() = gnome
 Conflicts:      pattern() = kde
+%endif
 # from data/X11-YaST
 Recommends:     libyui-qt-pkg
 Recommends:     yast2-control-center-qt
