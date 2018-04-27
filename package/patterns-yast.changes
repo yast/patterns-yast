@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Apr 26 15:36:01 UTC 2018 - lnussel@suse.de
+
+- move yast2-fonts in the x11_yast pattern as it pulls in freetype and stuff
+  related to it (boo#1090189)
+- remove kde and gnome conflicts in x11_yast pattern (boo#1090319)
+- version 20180427
+
+-------------------------------------------------------------------
 Tue Apr  3 04:20:05 UTC 2018 - sflees@suse.de
 
 - Suggest yast2-kdump on all arches (bsc#1078393)
