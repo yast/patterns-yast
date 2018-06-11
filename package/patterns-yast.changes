@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jun 11 13:23:50 UTC 2018 - jreidinger@suse.com
+
+- add yast2-ftp-server and yast2-tftp-server as recommended
+  (bsc#1081312)
+
+-------------------------------------------------------------------
 Tue Apr  3 04:20:05 UTC 2018 - sflees@suse.de
 
 - Suggest yast2-kdump on all arches (bsc#1078393)
