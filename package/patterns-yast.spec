@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180427
+Version:        20180612
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -92,6 +92,7 @@ Recommends:     yast2-support
 # see the discussion in #386473
 Recommends:     yast2-samba-client
 Recommends:     yast2-samba-server
+Recommends:     yast2-tftp-server
 # #542936
 Recommends:     yast2-vpn
 # Recommend NTP at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
