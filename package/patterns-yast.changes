@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jun 11 13:23:50 UTC 2018 - jreidinger@suse.com
+
+- add yast2-ftp-server and yast2-tftp-server as recommended
+  (bsc#1081312)
+
+-------------------------------------------------------------------
 Thu Apr 26 15:36:01 UTC 2018 - lnussel@suse.de
 
 - move yast2-fonts in the x11_yast pattern as it pulls in freetype and stuff
