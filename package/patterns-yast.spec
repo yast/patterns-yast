@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180612
+Version:        20180613
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -240,6 +240,7 @@ Recommends:     yast2-testsuite
 Recommends:     osc
 Recommends:     rubygem(%{rb_default_ruby_abi}:yast-rake)
 Recommends:     rubygem(%{rb_default_ruby_abi}:byebug)
+Recommends:     rubygem(%{rb_default_ruby_abi}:parallel_tests)
 Recommends:     rubygem(%{rb_default_ruby_abi}:rspec)
 Recommends:     rubygem(%{rb_default_ruby_abi}:simplecov)
 Recommends:     rubygem(%{rb_default_ruby_abi}:yard)
