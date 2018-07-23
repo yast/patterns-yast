@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Jul 13 12:35:09 UTC 2018 - sflees@suse.de
+
+- Replace ntp with chrony as per SLE / Leap 15
+
+-------------------------------------------------------------------
 Wed Jun 13 12:35:09 UTC 2018 - lslezak@suse.cz
 
 - Added rubygem-parallel_tests as recommended in the devel_yast
