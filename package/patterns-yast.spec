@@ -231,7 +231,7 @@ Graphical YaST user interfaces for minimal X desktop.
 Summary:        YaST Development
 Group:          Metapackages
 Provides:       pattern() = devel_yast
-Provides:       pattern-icon() = pattern-basis-devel
+Provides:       pattern-icon() = pattern-yast-devel
 Provides:       pattern-order() = 3460
 Provides:       pattern-visible()
 
