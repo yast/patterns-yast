@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180613
+Version:        20181002
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -139,6 +139,8 @@ Suggests:       sblim-sfcb
 Suggests:       cim-schema
 %if 0%{?is_opensuse}
 Requires:       yast2-branding-openSUSE
+# 1083398
+Recommends:     yast2-vm
 %else
 Requires:       yast2_theme
 %endif

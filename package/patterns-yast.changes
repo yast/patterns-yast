@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Tue Oct  2 16:43:35 CEST 2018 - Antoine Ginies <aginies@suse.com>
+
+- fix installing yast2-vm per default on openSUSE (bsc#1083398)
+
+-------------------------------------------------------------------
 Sun Sep 30 01:23:15 UTC 2018 - Stasiek Michalski <hellcp@opensuse.org>
 
 - Change icon for YaST devel pattern. (boo#1039994)
