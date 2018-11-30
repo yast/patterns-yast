@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Nov 30 08:44:52 UTC 2018 - lslezak@suse.cz
+
+- Renamed theme packages (related to boo#1109310)
+- Version 20181130
+
+-------------------------------------------------------------------
 Sun Sep 30 01:23:15 UTC 2018 - Stasiek Michalski <hellcp@opensuse.org>
 
 - Change icon for YaST devel pattern. (boo#1039994)
