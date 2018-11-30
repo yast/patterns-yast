@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20180613
+Version:        20181130
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -110,7 +110,7 @@ Suggests:       yast2-snapper
 # #381365
 Suggests:       yast2-squid
 # themeing for hardcore KDE lovers
-Suggests:       yast2-theme-openSUSE-Oxygen
+Suggests:       yast2-theme-oxygen
 # see extra-packages for reasons
 Suggests:       sbl
 Suggests:       Mesa
@@ -137,11 +137,7 @@ Suggests:       snapper
 # FATE 304350
 Suggests:       sblim-sfcb
 Suggests:       cim-schema
-%if 0%{?is_opensuse}
-Requires:       yast2-branding-openSUSE
-%else
-Requires:       yast2_theme
-%endif
+Requires:       yast2-theme
 
 %description yast2_basis
 YaST tools for basic system administration.
