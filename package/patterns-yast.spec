@@ -50,6 +50,10 @@ Provides:       pattern-visible()
 
 Requires:       libyui-ncurses-pkg
 Requires:       yast2
+%if 0%{?is_opensuse}
+# opensuse only, see bsc#1125040
+Requires:       yast2-alternatives
+%endif
 Requires:       yast2-country
 Requires:       yast2-firewall
 Requires:       yast2-hardware-detection
