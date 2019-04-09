@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20190228
+Version:        20190409
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
