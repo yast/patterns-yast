@@ -21,7 +21,7 @@
 Name:           patterns-yast
 
 Version:        20190411
-Release:        0
+Release:        1
 Summary:        Patterns for Installation (Yast)
 License:        MIT
 Group:          Metapackages
@@ -141,7 +141,6 @@ Suggests:       snapper
 Suggests:       sblim-sfcb
 Suggests:       cim-schema
 %if 0%{?is_opensuse}
-Requires:       yast2-branding-openSUSE
 # bsc#1083398
 Recommends:     yast2-vm
 %else
