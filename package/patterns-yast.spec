@@ -19,7 +19,8 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20181002
+
+Version:        20190411
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -50,6 +51,10 @@ Provides:       pattern-visible()
 
 Requires:       libyui-ncurses-pkg
 Requires:       yast2
+%if 0%{?is_opensuse}
+# opensuse only, see bsc#1125040
+Requires:       yast2-alternatives
+%endif
 Requires:       yast2-country
 Requires:       yast2-firewall
 Requires:       yast2-hardware-detection
@@ -95,8 +100,8 @@ Recommends:     yast2-samba-server
 Recommends:     yast2-tftp-server
 # #542936
 Recommends:     yast2-vpn
-# Recommend NTP at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
-Recommends:     ntp
+# Recommend Chrony at least until boo#936378 is fixed and YaST is not trying to configure a service that's not there
+Recommends:     chrony
 Suggests:       yast2-online-update-configuration
 Suggests:       autoyast2
 # yast2 clone_system is expected to be installed by default (sle-beta)
@@ -110,14 +115,12 @@ Suggests:       yast2-snapper
 # #381365
 Suggests:       yast2-squid
 # themeing for hardcore KDE lovers
-Suggests:       yast2-theme-openSUSE-Oxygen
+Suggests:       yast2-theme-oxygen
 # see extra-packages for reasons
 Suggests:       sbl
 Suggests:       Mesa
 Suggests:       i4l-isdnlog
 Suggests:       ypserv
-Suggests:       ntp
-Suggests:       ntp-doc
 Suggests:       install-initrd
 # for yast2-scanner
 # mandatory
@@ -139,7 +142,7 @@ Suggests:       sblim-sfcb
 Suggests:       cim-schema
 %if 0%{?is_opensuse}
 Requires:       yast2-branding-openSUSE
-# 1083398
+# bsc#1083398
 Recommends:     yast2-vm
 %else
 Requires:       yast2_theme
