@@ -19,7 +19,8 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20190409
+
+Version:        20190411
 Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
@@ -139,7 +140,13 @@ Suggests:       snapper
 # FATE 304350
 Suggests:       sblim-sfcb
 Suggests:       cim-schema
-Requires:       yast2-theme
+%if 0%{?is_opensuse}
+Requires:       yast2-branding-openSUSE
+# bsc#1083398
+Recommends:     yast2-vm
+%else
+Requires:       yast2_theme
+%endif
 
 %description yast2_basis
 YaST tools for basic system administration.
