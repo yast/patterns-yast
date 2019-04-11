@@ -140,12 +140,10 @@ Suggests:       snapper
 # FATE 304350
 Suggests:       sblim-sfcb
 Suggests:       cim-schema
-%if 0%{?is_opensuse}
-Requires:       yast2-branding-openSUSE
+Requires:       yast2-theme
 # bsc#1083398
+%if 0%{?is_opensuse}
 Recommends:     yast2-vm
-%else
-Requires:       yast2_theme
 %endif
 
 %description yast2_basis
