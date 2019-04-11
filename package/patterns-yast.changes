@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Thu Apr 11 14:19:26 CEST 2019 - Antoine Ginies <aginies@suse.com>
 
-- remove requires on old package yast2-branding-openSUSE
+- remove requires on old package yast2-branding-openSUSE (boo#1109310)
 
 -------------------------------------------------------------------
 Thu Apr 11 11:20:51 CEST 2019 - Antoine Ginies <aginies@suse.com>

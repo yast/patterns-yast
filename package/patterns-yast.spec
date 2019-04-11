@@ -21,7 +21,7 @@
 Name:           patterns-yast
 
 Version:        20190411
-Release:        1
+Release:        0
 Summary:        Patterns for Installation (Yast)
 License:        MIT
 Group:          Metapackages
