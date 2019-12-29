@@ -73,7 +73,7 @@ Recommends:     yast2-vm
 %endif
 
 # Don't install update facilities on Tumbleweed
-%if !0%{?suse_version} > 1500
+%if 0%{?sle_version}
 Requires:       yast2-online-update
 Requires:       yast2-online-update-frontend
 Requires:       yast2-update
