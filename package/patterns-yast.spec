@@ -55,7 +55,6 @@ Requires:       yast2-packager
 Requires:       yast2-theme
 
 Recommends:     yast2-metapackage-handler
-Recommends:     yast2-support
 
 Suggests:       yast2-firstboot
 Suggests:       yast2-snapper
@@ -63,12 +62,14 @@ Suggests:       yast2-snapper
 # SLE only
 %if !0%{?is_opensuse}
 Requires:       yast2-registration
+Recommends:     yast2-support
 # yast2 clone_system is expected to be installed by default (sle-beta)
 Recommends:     autoyast2-installation
 %endif
 
 %if 0%{?is_opensuse}
 Requires:       yast2-alternatives
+# bsc#1083398
 Recommends:     yast2-vm
 %endif
 
@@ -99,6 +100,7 @@ Provides:       pattern-order() = 1222
 Provides:       pattern-visible()
 
 Requires:       yast2-country
+# Included for the release notes client
 Requires:       yast2-installation
 Requires:       yast2-services-manager
 Requires:       yast2-sysconfig
@@ -127,6 +129,7 @@ Provides:       pattern-icon() = yast
 Provides:       pattern-order() = 1224
 Provides:       pattern-visible()
 
+# Included for the release notes client
 Requires:       yast2-installation
 Requires:       yast2-ldap
 Requires:       yast2-mail
