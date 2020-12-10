@@ -20,7 +20,7 @@
 
 Name:           patterns-yast
 
-Version:        20191229
+Version:        20201210
 Release:        0
 Summary:        Patterns for Installation (YaST)
 License:        MIT
