@@ -106,7 +106,6 @@ Requires:       yast2-services-manager
 Requires:       yast2-sysconfig
 Requires:       yast2-users
 
-Recommends:     yast2-fonts
 Recommends:     yast2-journal
 Recommends:     yast2-printer
 Recommends:     yast2-scanner
