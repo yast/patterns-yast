@@ -1,8 +1,8 @@
 YaST - The Pattern Definitions
 ==============================
 
-[![Travis Build Status](
-https://travis-ci.org/yast/patterns-yast.svg?branch=master)](https://travis-ci.org/yast/patterns-yast)
+[![Workflow Status](https://github.com/yast/yast-patterns/workflows/CI/badge.svg?branch=master)](
+https://github.com/yast/yast-patterns/actions?query=branch%3Amaster)
 
 This meta package defines the YaST software patters which can be installed using
 the package manager.
