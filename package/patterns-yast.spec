@@ -231,6 +231,7 @@ Provides:       pattern() = x11_yast
 Provides:       pattern-extends() = yast2_basis
 Provides:       pattern-icon() = pattern-generic
 Provides:       pattern-order() = 1320
+Provides:       pattern-visible()
 # from data/X11-YaST
 Recommends:     libyui-qt-pkg
 Recommends:     yast2-control-center-qt
