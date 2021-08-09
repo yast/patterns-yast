@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Aug  9 11:56:10 UTC 2021 - Ladislav Slezák <lslezak@suse.cz>
+
+- 20210809
+
+-------------------------------------------------------------------
 Tue May 25 08:40:22 UTC 2021 - Alberto Planas Dominguez <aplanas@suse.com>
 
 - Make x11_yast pattern visible (bsc#1186343)
