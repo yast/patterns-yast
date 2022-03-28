@@ -146,7 +146,10 @@ Recommends:     yast2-iscsi-client
 Recommends:     yast2-journal
 Recommends:     yast2-ldap-client
 Recommends:     yast2-nfs-client
+# YaST NIS packages are dropped from TW (bsc#1183893)
+%if 0%{?suse_version} > 1500
 Recommends:     yast2-nis-client
+%endif
 Recommends:     yast2-ntp-client
 # see the discussion in #386473
 Recommends:     yast2-samba-client
@@ -193,7 +196,10 @@ Suggests:       yast2-firewall
 Suggests:       yast2-ldap
 Suggests:       yast2-ldap-client
 Suggests:       yast2-nfs-client
+# YaST NIS packages are dropped from TW (bsc#1183893)
+%if 0%{?suse_version} > 1500
 Suggests:       yast2-nis-client
+%endif
 Suggests:       yast2-printer
 Suggests:       yast2-samba-client
 Suggests:       yast2-slp
