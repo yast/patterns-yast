@@ -147,7 +147,8 @@ Recommends:     yast2-journal
 Recommends:     yast2-ldap-client
 Recommends:     yast2-nfs-client
 # YaST NIS packages are dropped from TW (bsc#1183893)
-%if 0%{?suse_version} > 1500
+# it is only available in SLE15/Leap15
+%if 0%{?sle_version}
 Recommends:     yast2-nis-client
 %endif
 Recommends:     yast2-ntp-client
@@ -197,7 +198,8 @@ Suggests:       yast2-ldap
 Suggests:       yast2-ldap-client
 Suggests:       yast2-nfs-client
 # YaST NIS packages are dropped from TW (bsc#1183893)
-%if 0%{?suse_version} > 1500
+# it is only available in SLE15/Leap15
+%if 0%{?sle_version}
 Suggests:       yast2-nis-client
 %endif
 Suggests:       yast2-printer
