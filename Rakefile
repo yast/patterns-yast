@@ -7,8 +7,6 @@
 
 require "yast/rake"
 
-Yast::Tasks.submit_to :sle15sp5
-
 # do not create a tarball, this package contains only a .spec file
 Rake::Task["tarball"].clear_actions
 
