@@ -2,7 +2,13 @@
 
 name: CI
 
-on: [ push, pull_request ]
+on:
+  pull_request:
+  push:
+    branches:
+      # skip in master, the package is built in the submit.yml action
+      - "!master"
+
 
 jobs:
   Package:
