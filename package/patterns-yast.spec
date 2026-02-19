@@ -19,7 +19,7 @@
 %bcond_with betatest
 
 Name:           patterns-yast
-Version:        20220411
+Version:        20260219
 Release:        0
 Summary:        Patterns for Installation (YaST)
 License:        MIT
@@ -130,7 +130,6 @@ Provides:       pattern-visible()
 # Included for the release notes client
 Requires:       yast2-installation
 Requires:       yast2-ldap
-Requires:       yast2-mail
 # Useless on desktop, since NM is the default there
 Requires:       yast2-network
 Requires:       yast2-security
